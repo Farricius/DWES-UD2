@@ -11,8 +11,8 @@
 <body>
 
     <?php
-    $var1 = 3;
-    $var2 = 23;
+    $var1 = 23;
+    $var2 = 24;
     $varXD;
 
     printf("El número %d ahora es %b en Binario! ", $var1, $var1);
@@ -20,7 +20,7 @@
 
     // Operador AND, CON RPINT F Y EL BINARIO ANTES DE LA FÓRMULA
     $var3 = $var1 & $var2;
-    printf ("<p> Con operador AND %b :" , $var3);
+    printf ("<p> Con operador AND : %b" , $var3);
 
     // Operador NOT 1
     //$varXD = ~$var1

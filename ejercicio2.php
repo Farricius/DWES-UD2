@@ -25,8 +25,7 @@ $areaCircular = $radio * $radio * PI();
 echo "<p>El área del triángulo de Base  $base y Altura $altura es $areaTri </p>";
 echo "<p>El área del cuadrado de Base $base y Altura $altura es $areaCuadrado </p>";
 echo "<p>El área del rombo de Diag. Mayor $diagonalMayor y Diag. Menor $diagonalMenor es $areaRombo </p>";
-//echo "El área del círculo con radio $radio, es de " , $circulo;
-printf("En el círculo de radio %s, su área es %s", $radio , $areaCircular);
+printf("En el círculo de radio %s, su área es %s", $radio , number_format($areaCircular, 2));
 
 ?>
 

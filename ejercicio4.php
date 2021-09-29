@@ -28,14 +28,16 @@
 
     $precioZapatos = 45.99;
     $descuentoZapateria = 12;
-    $precioZapatosCon += $precioZapatos - ($precioZapatos * ($descuentoZapateria /100));
-    echo "El precio de un zapato es de $precioZapato";
+    $precioZapatosCon = 0;
+    $precioZapatosCon += ($precioZapatos - ($precioZapatos * $descuentoZapateria /100));
+    echo "El precio de un zapato es de $precioZapatos";
 
-    //printf ("<p> El precio de un zapato con descuento 12% es: " , sprintf("%01.2f", $precioZapatoCon), "euro</p>";
+    echo  "El precio de un zapato con descuento 12% es: ", sprintf("%01.2f" , $precioZapatosCon), " euros<p></p>";
 	
-    $cuentaFinal += $totalTarjeta + $precioZapatoCon;
+    $cuentaFinal = 0;
+    $cuentaFinal += $totalTarjeta + $precioZapatosCon;
 	
-	//echo "El precio de TODA la compra es: " , sprintf(%01.2f, $cuentaFinal) "euros</p>;
+	echo "El precio de TODA la compra es: " , sprintf("%01.2f", $cuentaFinal), " euros";
     
     ?>
 </body>
