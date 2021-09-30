@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,17 +29,15 @@
 
     $precioZapatos = 45.99;
     $descuentoZapateria = 12;
-    $precioZapatosCon = 0;
-    $precioZapatosCon += ($precioZapatos - ($precioZapatos * $descuentoZapateria /100));
-    echo "El precio de un zapato es de $precioZapatos";
+    $precioZapatosCon += $precioZapatos - ($precioZapatos * ($descuentoZapateria / 100));
+    echo "El precio de un zapato es de $precioZapato";
 
-    echo  "El precio de un zapato con descuento 12% es: ", sprintf("%01.2f" , $precioZapatosCon), " euros<p></p>";
-	
-    $cuentaFinal = 0;
-    $cuentaFinal += $totalTarjeta + $precioZapatosCon;
-	
-	echo "El precio de TODA la compra es: " , sprintf("%01.2f", $cuentaFinal), " euros";
-    
+    //printf ("<p> El precio de un zapato con descuento 12% es: " , sprintf("%01.2f", $precioZapatoCon), "euro</p>";
+
+    $cuentaFinal += $totalTarjeta + $precioZapatoCon;
+
+    //echo "El precio de TODA la compra es: " , sprintf(%01.2f, $cuentaFinal) "euros</p>;
+
     ?>
 </body>
 

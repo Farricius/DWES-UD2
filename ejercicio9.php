@@ -33,6 +33,27 @@
     // Crea una función y define dentro una variable local, una local estática y uséis una global.
     // Intenta acceder a ellas desde fuera de la función y mostrarlas por pantalla.
 
+    $variableGlobal = "Hola ";
+
+    function testVariables()
+    {
+
+        global $variableGlobal;
+        $variableGlobal = "Hooolaaa mundooo";
+        $variableLocal = "Hatajo se puede escribir con H según la RAE";
+        static $variableStatic = "Variable scope static";
+    }
+
+    // No Funcionan fuera:
+
+    echo "<p>Valor variable Global : $variableGlobal";
+    echo "<p>Valor variable Local dice: $variableLocal</p>";
+    echo "<p>Valor variable estática dice: $variableStatic</p>"; // No se borra tras método
+
+
+    testVariables();
+    echo "<p> Valor variable Global : $variableGlobal</p>";
+    echo "<p> Valor variable Estática: $variableStatic</p>"; // na
 
     ?>
 </body>

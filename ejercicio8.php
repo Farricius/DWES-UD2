@@ -14,8 +14,8 @@
     $var3 = is_bool($variable);
 
     echo "La variable es ARRAY?  " . var_export(is_array($variable)) . "<br>";
-    echo "La variable es TIPO...? " , var_export(gettype($variable)) . "<br>";
-    echo "La variable es BOOLEAN? " , var_export(is_bool($variable)) . "<br>";
+    echo "La variable es TIPO...? ", var_export(gettype($variable)) . "<br>";
+    echo "La variable es BOOLEAN? ", var_export(is_bool($variable)) . "<br>";
 
     // echo gettype($variable);
     // echo is_array($variable);
