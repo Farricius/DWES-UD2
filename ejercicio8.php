@@ -11,23 +11,20 @@
 <body>
     <?php
     $variable = "Pepe";
-    $var3 = is_bool($variable);
+    echo $variable;
+    echo "<br>";
 
-    echo "La variable es ARRAY?  " . var_export(is_array($variable)) . "<br>";
-    echo "La variable es TIPO...? ", var_export(gettype($variable)) . "<br>";
-    echo "La variable es BOOLEAN? ", var_export(is_bool($variable)) . "<br>";
-
-    // echo gettype($variable);
-    // echo is_array($variable);
-    // echo is_bool($variable);
+    echo "La variable es ARRAY?  " , var_export(is_array($variable)), "<br>";
+    echo "La variable es TIPO...? ", var_export(gettype($variable)), "<br>";
+    echo "La variable es BOOLEAN? ", var_export(is_bool($variable)), "<br>";
 
     $variable = 24.30;
-
     echo ($variable);
+    echo "<br>";
 
-    echo "La variable es FLOAT?  " . is_float($variable) . "<br>";
-    echo "La variable es NULL?  " . is_null($variable) . "<br>";
-    echo "La variable es STRING? " . is_string($variable) . "<br>";
+    echo "La variable es FLOAT?  " , var_export(is_float($variable)), "<br>";
+    echo "La variable es NULL?  " , var_export(is_null($variable)), "<br>";
+    echo "La variable es STRING? " , var_export(is_string($variable)), "<br>";
 
     ?>
 </body>

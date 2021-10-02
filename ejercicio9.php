@@ -12,6 +12,7 @@
     <?php
 
     // Variables de información del servidor: PHP_SELF, SERVER_ADDR, SERVER_NAME, DOCUMENT_ROOT, REMOTE_ADDR, REQUEST_METHOD
+
     echo $_SERVER['PHP_SELF'];
     echo " --- PHP_SELF --- Retorna el nombre de archivo del script ejecutado actual <br>";
 
@@ -33,27 +34,21 @@
     // Crea una función y define dentro una variable local, una local estática y uséis una global.
     // Intenta acceder a ellas desde fuera de la función y mostrarlas por pantalla.
 
-    $variableGlobal = "Hola ";
+    $variableGlobal = "Hola XD";
 
     function testVariables()
     {
-
-        global $variableGlobal;
+        global $variableGlobal; // No sirve fuera 
         $variableGlobal = "Hooolaaa mundooo";
         $variableLocal = "Hatajo se puede escribir con H según la RAE";
-        static $variableStatic = "Variable scope static";
+        static $variableStatic = "¡Variable scope static!";
     }
 
-    // No Funcionan fuera:
+    // La mayoría falla en navegador:
 
-    echo "<p>Valor variable Global : $variableGlobal";
-    echo "<p>Valor variable Local dice: $variableLocal</p>";
-    echo "<p>Valor variable estática dice: $variableStatic</p>"; // No se borra tras método
-
-
-    testVariables();
-    echo "<p> Valor variable Global : $variableGlobal</p>";
-    echo "<p> Valor variable Estática: $variableStatic</p>"; // na
+    echo "<p>Valor variable Global es : $variableGlobal"; 
+    echo "<p>Valor variable Local es: $variableLocal</p>";
+    echo "<p>Valor variable Estática es : $variableStatic</p>";
 
     ?>
 </body>
