@@ -10,13 +10,13 @@
 
 <body>
     <?php
-    $fullName = "José David Hernández";
+    $nombre = "José David Hernández";
     $edad = 24;
-    $ciudad = "Sevilla";
+    $poblacion = "Sevilla";
 
-    printf("Soy %s tengo %d años de edad y vivo en %s", $fullName, $edad, $ciudad);
+    printf("Soy %s, tengo %d años de edad y vivo en %s", $nombre, $edad, $poblacion);
     print "<p>";
-    echo "  Soy ", $fullName, ", tengo ", $edad, " años de edad y vivo en ", $ciudad;
+    echo "  Soy ", $nombre, ", tengo ", $edad, " años de edad y vivo en ", $poblacion;
     print "</p>";
 
     ?>
